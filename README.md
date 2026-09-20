@@ -15,6 +15,7 @@ algorithms/       → Algorithms and implementations
 data_structures/  → Data structure implementations
 patterns/         → Common problem-solving patterns
 problems/         → Solutions to programming problems
+```
 
 ### Patterns
 
@@ -23,9 +24,7 @@ problems/         → Solutions to programming problems
 Implementation Approach and Description
 1. 
 happy_number.py
-Description: The 
-happy_number.py
- script implements a function to determine whether a given number is a "happy number." A happy number is a number that eventually reaches 1 when replaced by the sum of the square of each digit. If it loops endlessly in a cycle that does not include 1, then it is not a happy number.
+Description: The happy_number.py script implements a function to determine whether a given number is a "happy number." A happy number is a number that eventually reaches 1 when replaced by the sum of the square of each digit. If it loops endlessly in a cycle that does not include 1, then it is not a happy number.
 
 Implementation Approach:
 
@@ -35,9 +34,8 @@ The algorithm uses two pointers, slow and fast, both starting at the initial num
 The slow pointer moves one step at a time, while the fast pointer moves two steps at a time.
 If the number is a happy number, the fast pointer will eventually reach 1.
 If a cycle is detected (i.e., fast and slow meet at the same node), the number is not a happy number.
-Helper Function 
-get_next_num
-:
+
+Helper Function get_next_num():
 
 This function calculates the next number in the sequence by summing the squares of the digits of the current number.
 It prints the intermediate steps for debugging purposes.
@@ -45,33 +43,25 @@ Example: For the input 43, the function will calculate the next numbers until it
 
 2. 
 linked_list_loop_mid_point.py
-Description: The 
-linked_list_loop_mid_point.py
- script implements functions to detect a loop in a linked list and to find the midpoint of a linked list using the fast and slow pointers technique.
+Description: The linked_list_loop_mid_point.py  script implements functions to detect a loop in a linked list and to find the midpoint of a linked list using the fast and slow pointers technique.
 
 Implementation Approach:
 
 Detecting a Loop in a Linked List:
 
-The 
-linked_list_loop
- function uses two pointers, slow and fast, both starting at the head of the list.
+The linked_list_loop  function uses two pointers, slow and fast, both starting at the head of the list.
 The slow pointer moves one step at a time, while the fast pointer moves two steps at a time.
 If a loop exists, the fast and slow pointers will eventually meet at the same node.
 If they meet, a loop is detected.
 Finding the Midpoint of a Linked List:
 
-The 
-linked_list_mid_point
- function also uses the fast and slow pointers technique.
+The linked_list_mid_point  function also uses the fast and slow pointers technique.
 The slow pointer moves one step at a time, while the fast pointer moves two steps at a time.
 When the fast pointer reaches the end of the list, the slow pointer will be at the midpoint.
 Helper Functions:
 
-print_list
-: Prints the values of the linked list nodes.
-linked_list_loop_naive_approach
-: A naive approach to detect a loop by using a set to track visited nodes.
+print_list : Prints the values of the linked list nodes.
+linked_list_loop_naive_approach : A naive approach to detect a loop by using a set to track visited nodes.
 Example: For a linked list with nodes 51 -> 41 -> 31 -> 21 -> 11, the 
 linked_list_mid_point
  function will return the midpoint node, which is 31.
